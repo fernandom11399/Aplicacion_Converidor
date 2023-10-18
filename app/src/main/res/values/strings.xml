@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Convertidor_De_Grados</string>
+
+    <string-array name="todoslosgrados">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+
+</resources>
