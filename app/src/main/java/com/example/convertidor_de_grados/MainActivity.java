@@ -240,22 +240,28 @@ public class MainActivity extends AppCompatActivity{
                     case "Celsius":
                         if(hasta.equals("Kelvin")){
                             contenedorres.setText(String.valueOf(C.parse(K).getValor()));
-                        }else{
+                        }else if(hasta.equals("Fahrenheit")){
                             contenedorres.setText(String.valueOf(C.parse(F).getValor()));
-                        }
+                        }else{
+                        contenedorres.setText(grados);
+                    }
                         break;
                     case "Kelvin":
                         if(hasta.equals("Celsius")){
                             contenedorres.setText(String.valueOf(K.parse(C).getValor()));
-                        }else{
+                        }else if(hasta.equals("Fahrenheit")){
                             contenedorres.setText(String.valueOf(K.parse(F).getValor()));
+                        }else{
+                            contenedorres.setText(grados);
                         }
                         break;
                     case "Fahrenheit":
                         if(hasta.equals("Celsius")){
                             contenedorres.setText(String.valueOf(F.parse(C).getValor()));
-                        }else{
+                        }else if(hasta.equals("Kelvin")){
                             contenedorres.setText(String.valueOf(F.parse(K).getValor()));
+                        }else{
+                            contenedorres.setText(grados);
                         }
                         break;
                 }
